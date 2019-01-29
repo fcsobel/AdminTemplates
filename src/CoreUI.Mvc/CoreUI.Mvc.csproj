@@ -103,14 +103,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Site.css" />
     <Content Include="css\style.css" />
     <Content Include="css\style.min.css" />
     <Content Include="Global.asax" />
-    <Content Include="images\banner1.svg" />
-    <Content Include="images\banner2.svg" />
-    <Content Include="images\banner3.svg" />
-    <Content Include="images\banner4.svg" />
     <Content Include="img\avatars\1.jpg" />
     <Content Include="img\avatars\2.jpg" />
     <Content Include="img\avatars\3.jpg" />
@@ -119,6 +114,10 @@
     <Content Include="img\avatars\6.jpg" />
     <Content Include="img\avatars\7.jpg" />
     <Content Include="img\avatars\8.jpg" />
+    <Content Include="img\banner1.svg" />
+    <Content Include="img\banner2.svg" />
+    <Content Include="img\banner3.svg" />
+    <Content Include="img\banner4.svg" />
     <Content Include="img\favicon.png" />
     <Content Include="img\logo-symbol.png" />
     <Content Include="img\logo.png" />
