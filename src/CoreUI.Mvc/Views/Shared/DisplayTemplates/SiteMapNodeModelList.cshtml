@@ -4,33 +4,28 @@
 @{
 	var parent = Model.First().Parent;
 }
-@if (parent.Parent == null)
+
+<ul class="nav-dropdown-items">
+	@foreach (var node in Model)
+	{
+		@Html.DisplayFor(m => node)
+	}
+</ul>
+
+@*@if (parent.Parent == null)
 {
-	<ul class="nav">
-		@foreach (var node in Model)
-		{
-			<li class="nav-item">
-				@Html.DisplayFor(m => node)
-				@if (node.Children.Any())
-				{
-					@Html.DisplayFor(m => node.Children)
-				}
-			</li>
-		}
-	</ul>
+	foreach (var node in Model)
+	{
+		@Html.DisplayFor(m => node)
+	}
 }
 else
 {
 	<ul class="nav-dropdown-items">
+
 		@foreach (var node in Model)
 		{
-			<li class="nav-item">
-				@Html.DisplayFor(m => node)
-				@if (node.Children.Any())
-				{
-					@Html.DisplayFor(m => node.Children)
-				}
-		</li>
-	}
+			@Html.DisplayFor(m => node)
+		}
 	</ul>
-}
+}*@

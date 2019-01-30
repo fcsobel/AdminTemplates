@@ -14,6 +14,11 @@ namespace AdminApp.Controllers
             return View();
         }
 
+		public ActionResult Dashboard()
+		{
+			return View();
+		}
+
 		// GET: Home
 		public ActionResult About()
 		{

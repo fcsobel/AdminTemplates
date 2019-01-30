@@ -57,9 +57,8 @@
     <div class="app-body">
         <div class="sidebar">
 
-            @*@Html.Partial("_SidebarNav")*@
 			<nav class="sidebar-nav">
-				@Html.MvcSiteMap().SiteMap()
+				@Html.MvcSiteMap().SiteMap(true)
 			</nav>
 
             <button class="sidebar-minimizer brand-minimizer" type="button"></button>
