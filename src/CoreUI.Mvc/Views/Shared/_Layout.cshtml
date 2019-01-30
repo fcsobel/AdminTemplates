@@ -57,14 +57,18 @@
     <div class="app-body">
         <div class="sidebar">
 
-            @Html.Partial("_SidebarNav")
+            @*@Html.Partial("_SidebarNav")*@
+			<nav class="sidebar-nav">
+				@Html.MvcSiteMap().SiteMap()
+			</nav>
 
             <button class="sidebar-minimizer brand-minimizer" type="button"></button>
         </div>
 
         <main class="main">
 
-            @Html.Partial("_BreadCrumb")
+			@Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+
             <div class="container-fluid">
 
                 @RenderBody()

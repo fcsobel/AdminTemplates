@@ -1,0 +1,42 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapPathHelperModel
+@using System.Web.Mvc.Html
+@using System.Linq
+@using MvcSiteMapProvider.Web.Html.Models
+ 
+@if (Model.Nodes.Count != 1)
+{
+<ol class="breadcrumb">
+	@foreach (var node in Model.Nodes)
+	{
+		if (node == Model.Nodes.First())
+		{
+			continue;
+		}
+
+		string url = node.IsClickable ? node.Url : "#";
+		<li class="breadcrumb-item"><a href="@url">@node.Title</a></li>
+
+
+		@*if (node != Model.Nodes.Last())
+		{
+			string url = node.IsClickable ? node.Url : "#";
+			<li class="breadcrumb-item"><a href="@url">@node.Title</a></li>
+		}
+		else
+		{
+			<li class="breadcrumb-item active">@node.Title</li>
+		}*@
+	}
+
+	<!-- Breadcrumb Menu-->
+	<li class="breadcrumb-menu d-md-down-none">
+		<div class="btn-group" role="group" aria-label="Button group">
+			<a class="btn" asp-controller="Home" asp-action="Index" asp-route-view=""><i class="fa fa-windows"></i> Home</a>
+			<a class="btn" asp-controller="Home" asp-action="About" asp-route-view=""><i class="icon-speech"></i> About</a>
+			<a class="btn" asp-controller="Home" asp-action="Contact" asp-route-view=""><i class="icon-envelope"></i> Contact</a>
+		</div>
+	</li>
+
+
+</ol>
+}

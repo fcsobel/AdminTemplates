@@ -1,0 +1,32 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapHelperModel
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+<ul class="nav">
+	@foreach (var node in Model.Nodes)
+	{
+		if (node.Parent == null)
+		{
+			if (node.Children.Any())
+			{
+				@Html.DisplayFor(m => node.Children)
+			}
+		}
+		else
+		{
+			if (node.Children.Any())
+			{
+				<li class="nav-item nav-dropdown">
+					@Html.DisplayFor(m => node)
+					@Html.DisplayFor(m => node.Children)
+				</li>
+				}
+				else
+				{
+				<li class="nav-item">
+					@Html.DisplayFor(m => node)
+				</li>
+			}
+		}
+	}
+</ul>

@@ -19,5 +19,11 @@ namespace AdminApp.Controllers
 		{
 			return View();
 		}
+
+		// GET: Home
+		public ActionResult SiteMap()
+		{
+			return View();
+		}
 	}
 }
