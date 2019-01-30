@@ -3,29 +3,20 @@
 @using System.Linq
 @using MvcSiteMapProvider.Web.Html.Models
  
-@if (Model.Nodes.Count != 1)
-{
 <ol class="breadcrumb">
+	<li class="breadcrumb-item">Home</li>
+
 	@foreach (var node in Model.Nodes)
 	{
-		if (node == Model.Nodes.First())
+		if (node == Model.Nodes.Last())
 		{
-			continue;
+			<li class="breadcrumb-item active">@node.Title</li>
 		}
-
-		string url = node.IsClickable ? node.Url : "#";
-		<li class="breadcrumb-item"><a href="@url">@node.Title</a></li>
-
-
-		@*if (node != Model.Nodes.Last())
+		else
 		{
 			string url = node.IsClickable ? node.Url : "#";
 			<li class="breadcrumb-item"><a href="@url">@node.Title</a></li>
 		}
-		else
-		{
-			<li class="breadcrumb-item active">@node.Title</li>
-		}*@
 	}
 
 	<!-- Breadcrumb Menu-->
@@ -36,7 +27,4 @@
 			<a class="btn" asp-controller="Home" asp-action="Contact" asp-route-view=""><i class="icon-envelope"></i> Contact</a>
 		</div>
 	</li>
-
-
 </ol>
-}
