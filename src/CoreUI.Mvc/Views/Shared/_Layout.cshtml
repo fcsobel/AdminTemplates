@@ -9,7 +9,7 @@
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
     <link rel="shortcut icon" href="~/img/favicon.png">
 
-    <title>Test - Bootstrap 4 Admin Template</title>
+    <title>CoreUI - Bootstrap 4 Admin Template</title>
 
     <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.0.0/css/flag-icon.min.css" rel="stylesheet" />	
@@ -52,51 +52,51 @@
 -->
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
 
-    @Html.Partial("_AppHeader")
+	@Html.Partial("_AppHeader")
 
-    <div class="app-body">
-        <div class="sidebar">
+	<div class="app-body">
+		<div class="sidebar">
 
 			<nav class="sidebar-nav">
-				@Html.MvcSiteMap().SiteMap(true)
+				@Html.MvcSiteMap().SiteMap()
 			</nav>
 
-            <button class="sidebar-minimizer brand-minimizer" type="button"></button>
-        </div>
+			<button class="sidebar-minimizer brand-minimizer" type="button"></button>
+		</div>
 
-        <main class="main">
+		<main class="main">
 
-			@Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+			@Html.MvcSiteMap().SiteMapPath()
 
-            <div class="container-fluid">
+			<div class="container-fluid">
 
-                @RenderBody()
+				@RenderBody()
 
-            </div>
+			</div>
 
-        </main>
+		</main>
 
-        @Html.Partial("_AsideMenu")
+		@Html.Partial("_AsideMenu")
 
-    </div>
+	</div>
 
-    @Html.Partial("_Footer")
+	@Html.Partial("_Footer")
 
-    <!-- Bootstrap and necessary plugins -->
-	<script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- Bootstrap and necessary plugins -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 
-    <!-- Plugins and scripts required by all views -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<!-- Plugins and scripts required by all views -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 
-    <!-- CoreUI main scripts -->
-    <script src="/js/app.js"></script>
-    
+	<!-- CoreUI main scripts -->
+	<script src="/js/app.js"></script>
+
 	<!-- Plugins and scripts required by this views -->
-    <!-- Custom scripts required by this view -->
-    @RenderSection("Scripts", required: false)
+	<!-- Custom scripts required by this view -->
+	@RenderSection("Scripts", required: false)
 
 </body>
 </html>
