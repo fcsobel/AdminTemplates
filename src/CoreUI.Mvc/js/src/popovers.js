@@ -1,8 +1,13 @@
+import $ from 'jquery'
+
 /**
  * --------------------------------------------------------------------------
- * CoreUI Free Boostrap Admin Template (v2.1.11): tooltips.js
+ * CoreUI Free Boostrap Admin Template (v2.1.11): popovers.js
  * Licensed under MIT (https://coreui.io/license)
  * --------------------------------------------------------------------------
  */
-$('[data-toggle="tooltip"]').tooltip();
-//# sourceMappingURL=tooltips.js.map
+
+$('[data-toggle="popover"]').popover()
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})

@@ -34,42 +34,33 @@
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
-
 	@Html.Partial("_AppHeader")
-
 	<div class="app-body">
 		<div class="sidebar">
-
 			<nav class="sidebar-nav">
 				@Html.MvcSiteMap().SiteMap()
 			</nav>
-			@*@Html.Partial("_SidebarNav")*@
-
 			<button class="sidebar-minimizer brand-minimizer" type="button"></button>
 		</div>
 
 		<main class="main">
-
 			@Html.MvcSiteMap().SiteMapPath()
-
 			<div class="container-fluid">
 				@RenderBody()
 			</div>
 		</main>
-
 		@Html.Partial("_AsideMenu")
-
 	</div>
-
 	@Html.Partial("_Footer")
 
-	<!-- Bootstrap and necessary plugins -->
+	<!-- CoreUI, Bootstrap and necessary plugins-->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.js"></script>
 	<script src="~/js/coreui/coreui.js"></script>
+
 	@*
 	<!-- Used by index page -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
@@ -84,10 +75,10 @@
 	@RenderSection("Scripts", required: false)
 
 	<script>
-    //$('#ui-view').ajaxLoad();
-    //$(document).ajaxComplete(function() {
-    //  Pace.restart()
-    //});
+		$('#ui-view').ajaxLoad();
+		$(document).ajaxComplete(function() {
+			Pace.restart()
+		});
   </script>
 
 </body>

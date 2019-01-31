@@ -6,35 +6,24 @@ using System.Web.Mvc;
 
 namespace AdminApp.Controllers
 {
-    public class AdminController : Controller
+    public class NotificationsController : Controller
     {
-        // GET: Home
         public ActionResult Index()
         {
             return View();
         }
 
-		public ActionResult Dashboard()
+		public ActionResult Alerts()
 		{
 			return View();
 		}
 
-		public ActionResult Colors()
+		public ActionResult Badge()
 		{
 			return View();
 		}
 
-		public ActionResult Charts()
-		{
-			return View();
-		}
-
-		public ActionResult Typography()
-		{
-			return View();
-		}
-
-		public ActionResult Widgets()
+		public ActionResult Modals()
 		{
 			return View();
 		}

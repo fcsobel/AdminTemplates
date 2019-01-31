@@ -6,11 +6,48 @@
 	<mvcSiteMapNode title="Admin" controller="Home" action="Index" icon="puzzle">
 
 		<mvcSiteMapNode title="Dashboard" controller="Admin" action="Index" icon="speedometer" />
-		<mvcSiteMapNode title="Colors" controller="Admin" action="Colors" icon="speedometer" group="Theme" />
-		<mvcSiteMapNode title="Charts" controller="Admin" action="Charts" icon="chart" badge="PRO" badge-type="danger" />
+		
+		<mvcSiteMapNode group="Theme" title="Colors" controller="Admin" action="Colors" icon="drop"  />
+		<mvcSiteMapNode title="Typography" controller="Admin" action="Typography" icon="pencil" />
+	
 
+		<mvcSiteMapNode group="Components" title="Charts" controller="Admin" action="Charts" icon="chart" badge="PRO" badge-type="danger" />
 
-		<mvcSiteMapNode title="Home" controller="Home" action="Index" icon="puzzle">
+		<mvcSiteMapNode controller="Base" title="Base" action="Index" icon="puzzle">
+			<mvcSiteMapNode controller="Base" title="Breadcrumb"	action="Breadcrumb" />
+			<mvcSiteMapNode controller="Base" title="Cards"				action="Cards"			 />
+			<mvcSiteMapNode controller="Base" title="Carousel"		action="Carousel"	 />
+			<mvcSiteMapNode controller="Base" title="Collapse"		action="Collapse"	 />
+			<mvcSiteMapNode controller="Base" title="Forms"				action="Forms"			 />
+			<mvcSiteMapNode controller="Base" title="Jumbotron"		action="Jumbotron"	 />
+			<mvcSiteMapNode controller="Base" title="ListGroup"		action="List-Group"	 />
+			<mvcSiteMapNode controller="Base" title="Navs"				action="Navs"			 />
+			<mvcSiteMapNode controller="Base" title="Pagination"	action="Pagination" />
+			<mvcSiteMapNode controller="Base" title="Popovers"		action="Popovers"	 />
+			<mvcSiteMapNode controller="Base" title="Progress"		action="Progress"	 />
+			<mvcSiteMapNode controller="Base" title="Scrollspy"		action="Scrollspy"	 />
+			<mvcSiteMapNode controller="Base" title="Switches"		action="Switches"	 />
+			<mvcSiteMapNode controller="Base" title="Tables"			action="Tables"		 />
+			<mvcSiteMapNode controller="Base" title="Tabs"				action="Tabs"			 />
+			<mvcSiteMapNode controller="Base" title="Tooltips"		action="Tooltips"	 />
+		</mvcSiteMapNode>
+
+		<mvcSiteMapNode title="Widgets" controller="Admin" action="Widgets" icon="calculator" badge="NEW" badge-type="info" />
+
+		<mvcSiteMapNode controller="Icons" title="Icons" action="Index" icon="star">
+			<mvcSiteMapNode controller="Icons" title="CoreUI Icons" action="coreui-icons" />
+			<mvcSiteMapNode controller="Icons" title="Flags" action="Flags" />
+			<mvcSiteMapNode controller="Icons" title="Font Awesome" action="font-awesome" />
+			<mvcSiteMapNode controller="Icons" title="Simple Line Icons" action="simple-line-icons" />
+		</mvcSiteMapNode>
+
+		<mvcSiteMapNode controller="Notifications" title="Notifications" action="Index" icon="bell">
+			<mvcSiteMapNode controller="Notifications" title="Alerts" action="Alerts" />
+			<mvcSiteMapNode controller="Notifications" title="Badge" action="Badge" />
+			<mvcSiteMapNode controller="Notifications" title="Modals" action="Modals" />
+		</mvcSiteMapNode>
+
+		<mvcSiteMapNode group="Home" title="Home" controller="Home" action="Index" icon="puzzle">
 			<mvcSiteMapNode title="About" controller="Home" action="About" icon="speech"/>
 			<mvcSiteMapNode title="Contact" controller="Home" action="Contact" icon="envelope" />
 		</mvcSiteMapNode>		
