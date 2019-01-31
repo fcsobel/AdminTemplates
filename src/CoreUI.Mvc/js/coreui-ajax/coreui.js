@@ -223,7 +223,7 @@
     return re1[LAST_INDEX] !== 0 || re2[LAST_INDEX] !== 0;
   })();
 
-  // nonparticipating capturing group, copied from es5-shim's String#split patch.
+	  // nonparticipating capturing group, copied from es5-shim's String#split patch.
   var NPCG_INCLUDED = /()??/.exec('')[1] !== undefined;
 
   var PATCH = UPDATES_LAST_INDEX_WRONG || NPCG_INCLUDED;
@@ -538,7 +538,7 @@
     if (
       'abbc'[$SPLIT](/(b)*/)[1] == 'c' ||
       'test'[$SPLIT](/(?:)/, -1)[LENGTH] != 4 ||
-      'ab'[$SPLIT](/(?:ab)*/)[LENGTH] != 2 ||
+		  'ab'[$SPLIT](/(?:ab)*/)[LENGTH] != 2 ||
       '.'[$SPLIT](/(.?)(.?)/)[LENGTH] != 4 ||
       '.'[$SPLIT](/()()/)[LENGTH] > 1 ||
       ''[$SPLIT](/.?/)[LENGTH]
@@ -628,7 +628,7 @@
           var e;
           if (
             z === null ||
-	            (e = $min(_toLength(splitter.lastIndex + (SUPPORTS_Y ? 0 : q)), S.length)) === p
+            (e = $min(_toLength(splitter.lastIndex + (SUPPORTS_Y ? 0 : q)), S.length)) === p
           ) {
             q = _advanceStringIndex(S, q, unicodeMatching);
           } else {
@@ -1340,12 +1340,12 @@
       NAV_ITEM: '.sidebar-nav .nav-item',
       VIEW_SCRIPT: '.view-script'
     };
-	  var Default = {
-		  defaultPage: '',
-      //defaultPage: 'main.html',
-      errorPage: '404.html',
-      //subpagesDirectory: 'views/'
-	  subpagesDirectory: ''
+    var Default = {
+		defaultPage: '',
+		//defaultPage: 'main.html',
+		errorPage: '404.html',
+		//subpagesDirectory: 'views/'
+		subpagesDirectory: ''
     };
 
     var AjaxLoad =

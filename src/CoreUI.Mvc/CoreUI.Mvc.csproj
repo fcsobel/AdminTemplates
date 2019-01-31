@@ -138,6 +138,10 @@
     <Content Include="js\app.js" />
     <Content Include="js\charts.js" />
     <Content Include="js\colors.js" />
+    <Content Include="js\coreui-ajax\coreui-utilities.js" />
+    <Content Include="js\coreui-ajax\coreui-utilities.min.js" />
+    <Content Include="js\coreui-ajax\coreui.js" />
+    <Content Include="js\coreui-ajax\coreui.min.js" />
     <Content Include="js\coreui\coreui.js" />
     <Content Include="js\coreui\custom-tooltips.js" />
     <Content Include="js\coreui\custom-tooltips.min.js" />
@@ -186,6 +190,10 @@
     <Content Include="js\coreui\custom-tooltips.min.js.map" />
     <Content Include="css\coreui\pace.css.map" />
     <Content Include="css\coreui\pace.min.css.map" />
+    <Content Include="js\coreui-ajax\coreui-utilities.js.map" />
+    <Content Include="js\coreui-ajax\coreui-utilities.min.js.map" />
+    <Content Include="js\coreui-ajax\coreui.js.map" />
+    <Content Include="js\coreui-ajax\coreui.min.js.map" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -262,6 +270,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="css\coreui-ajax\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
