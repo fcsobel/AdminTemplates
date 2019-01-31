@@ -11,9 +11,9 @@
 		<mvcSiteMapNode title="Typography" controller="Admin" action="Typography" icon="pencil" />
 	
 
-		<mvcSiteMapNode group="Components" title="Charts" controller="Admin" action="Charts" icon="chart" badge="PRO" badge-type="danger" />
+		
 
-		<mvcSiteMapNode controller="Base" title="Base" action="Index" icon="puzzle">
+		<mvcSiteMapNode group="Components" controller="Base" title="Base" action="Index" icon="puzzle">
 			<mvcSiteMapNode controller="Base" title="Breadcrumb"	action="Breadcrumb" />
 			<mvcSiteMapNode controller="Base" title="Cards"				action="Cards"			 />
 			<mvcSiteMapNode controller="Base" title="Carousel"		action="Carousel"	 />
@@ -32,7 +32,14 @@
 			<mvcSiteMapNode controller="Base" title="Tooltips"		action="Tooltips"	 />
 		</mvcSiteMapNode>
 
-		<mvcSiteMapNode title="Widgets" controller="Admin" action="Widgets" icon="calculator" badge="NEW" badge-type="info" />
+		<mvcSiteMapNode controller="Buttons" title="Buttons" action="Index" icon="cursor">
+			<mvcSiteMapNode controller="Buttons" title="Buttons"				action="buttons"	 />
+			<mvcSiteMapNode controller="Buttons" title="Brand Buttons"	action="brand-buttons" />
+			<mvcSiteMapNode controller="Buttons" title="Button Group"		action="button-group"			 />
+			<mvcSiteMapNode controller="Buttons" title="Dropdowns"			action="dropdowns"	 />
+		</mvcSiteMapNode>
+
+		<mvcSiteMapNode  title="Charts" controller="Admin" action="Charts" icon="chart" badge="PRO" badge-type="danger" />
 
 		<mvcSiteMapNode controller="Icons" title="Icons" action="Index" icon="star">
 			<mvcSiteMapNode controller="Icons" title="CoreUI Icons" action="coreui-icons" />
@@ -40,14 +47,16 @@
 			<mvcSiteMapNode controller="Icons" title="Font Awesome" action="font-awesome" />
 			<mvcSiteMapNode controller="Icons" title="Simple Line Icons" action="simple-line-icons" />
 		</mvcSiteMapNode>
-
+		
 		<mvcSiteMapNode controller="Notifications" title="Notifications" action="Index" icon="bell">
 			<mvcSiteMapNode controller="Notifications" title="Alerts" action="Alerts" />
 			<mvcSiteMapNode controller="Notifications" title="Badge" action="Badge" />
 			<mvcSiteMapNode controller="Notifications" title="Modals" action="Modals" />
 		</mvcSiteMapNode>
 
-		<mvcSiteMapNode group="Home" title="Home" controller="Home" action="Index" icon="puzzle">
+		<mvcSiteMapNode title="Widgets" controller="Admin" action="Widgets" icon="calculator" badge="NEW" badge-type="info" />
+
+		<mvcSiteMapNode group="Extras" title="Home" controller="Home" action="Index" icon="puzzle">
 			<mvcSiteMapNode title="About" controller="Home" action="About" icon="speech"/>
 			<mvcSiteMapNode title="Contact" controller="Home" action="Contact" icon="envelope" />
 		</mvcSiteMapNode>		
