@@ -4,11 +4,16 @@
             xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
 
 	<mvcSiteMapNode title="Admin" controller="Home" action="Index" icon="puzzle">
-		<mvcSiteMapNode title="Dashboard" controller="Home" action="Dashboard" icon="speedometer" />
-			<mvcSiteMapNode title="Home" controller="Home" action="Index" icon="puzzle">
-				<mvcSiteMapNode title="About" controller="Home" action="About" icon="speech"/>
-				<mvcSiteMapNode title="Contact" controller="Home" action="Contact" icon="envelope" />
-			</mvcSiteMapNode>		
+
+		<mvcSiteMapNode title="Dashboard" controller="Admin" action="Index" icon="speedometer" />
+		<mvcSiteMapNode title="Colors" controller="Admin" action="Colors" icon="speedometer" group="Theme" />
+		<mvcSiteMapNode title="Charts" controller="Admin" action="Charts" icon="chart" badge="PRO" badge-type="danger" />
+
+
+		<mvcSiteMapNode title="Home" controller="Home" action="Index" icon="puzzle">
+			<mvcSiteMapNode title="About" controller="Home" action="About" icon="speech"/>
+			<mvcSiteMapNode title="Contact" controller="Home" action="Contact" icon="envelope" />
+		</mvcSiteMapNode>		
 	</mvcSiteMapNode>
 	
 </mvcSiteMap>

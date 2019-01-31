@@ -2,23 +2,41 @@
 @using System.Web.Mvc.Html
 @using MvcSiteMapProvider.Web.Html.Models
 
+@{ 
+	var icon = Model.GetAttribute("icon", true);
+	var group = Model.GetAttribute("group", false);
+	var badge = Model.GetAttribute("badge", false);
+	var badgeType = Model.GetAttribute("badge-type", false);	
+	var state = Model.IsCurrentNode ? "active" : "";
+}
+
+@if (!string.IsNullOrWhiteSpace(group))
+{
+	<li class="nav-title">@group</li>
+}
+
 @if (Model.Children.Any())
 {
-	<li class="nav-item nav-dropdown">
-		<a class="nav-link nav-dropdown-toggle" href="#" title="@Model.Description"><i class="icon-@Model.Icon()"></i>@Model.Title</a>
+	<li class="nav-item nav-dropdown">	
+		<a class="nav-link nav-dropdown-toggle" href="#" title="@Model.Description">
+		<i class="nav-icon icon-@icon"></i>@Model.Title
+		@if (!string.IsNullOrWhiteSpace(badge))
+		{
+			<span class="badge badge-@badgeType">@badge</span>
+		}
+		</a>
 		@Html.DisplayFor(m => Model.Children)
 	</li>
 }
 else
 {
 	<li class="nav-item">
-		@if (Model.IsCurrentNode)
+		<a class="nav-link @state" href="@Model.Url" title="@Model.Description">
+		<i class="nav-icon icon-@icon"></i>@Model.Title
+		@if (!string.IsNullOrWhiteSpace(badge))
 		{
-			<a class="nav-link active" href="@Model.Url" title="@Model.Description"><i class="icon-@Model.Icon()"></i>@Model.Title</a>
+			<span class="badge badge-@badgeType">@badge</span>
 		}
-		else
-		{
-			<a class="nav-link" href="@Model.Url" title="@Model.Description"><i class="icon-@Model.Icon()"></i>@Model.Title</a>
-		}
+		</a>
 	</li>
 }

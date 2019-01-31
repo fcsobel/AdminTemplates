@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace AdminApp.Controllers
 {
-    public class HomeController : Controller
+    public class AdminController : Controller
     {
         // GET: Home
         public ActionResult Index()
@@ -14,14 +14,17 @@ namespace AdminApp.Controllers
             return View();
         }
 
-		// GET: Home
-		public ActionResult About()
+		public ActionResult Dashboard()
 		{
 			return View();
 		}
 
-		// GET: Home
-		public ActionResult SiteMap()
+		public ActionResult Colors()
+		{
+			return View();
+		}
+
+		public ActionResult Charts()
 		{
 			return View();
 		}
