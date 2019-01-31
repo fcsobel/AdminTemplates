@@ -11,32 +11,74 @@ namespace AdminApp.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
-        }
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
+		}
 
 		public ActionResult Dashboard()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Colors()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Charts()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Typography()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Widgets()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 	}
 }

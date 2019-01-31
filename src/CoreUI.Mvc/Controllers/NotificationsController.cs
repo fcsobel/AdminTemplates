@@ -10,22 +10,50 @@ namespace AdminApp.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
+		}
 
 		public ActionResult Alerts()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Badge()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Modals()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 	}
 }

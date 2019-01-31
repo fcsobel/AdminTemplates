@@ -15,9 +15,9 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	@*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">*@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" />
-
-
+	<!-- Main styles for this application-->
 	<link href="~/css/coreui/style.css" rel="stylesheet" />
+	<link href="~/css/coreui/pace.min.css" rel="stylesheet" />
     
 	@*<!-- Main styles for this application -->
     <environment include="Development">
@@ -46,7 +46,12 @@
 		<main class="main">
 			@Html.MvcSiteMap().SiteMapPath()
 			<div class="container-fluid">
-				@RenderBody()
+				
+			</div>
+			<div class="container-fluid">
+				<div id="ui-view">
+					@RenderBody()
+				</div>
 			</div>
 		</main>
 		@Html.Partial("_AsideMenu")
@@ -74,12 +79,12 @@
 	<!-- Custom scripts required by this view -->
 	@RenderSection("Scripts", required: false)
 
-	<script>
-		$('#ui-view').ajaxLoad();
-		$(document).ajaxComplete(function() {
-			Pace.restart()
-		});
-  </script>
+    <script>
+      $('#ui-view').ajaxLoad();
+      $(document).ajaxComplete(function() {
+        Pace.restart()
+      });
+    </script>
 
 </body>
 </html>

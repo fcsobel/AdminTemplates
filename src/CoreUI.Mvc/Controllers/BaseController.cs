@@ -10,84 +10,196 @@ namespace AdminApp.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
+		}
 
 		public ActionResult Breadcrumb()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Cards()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Carousel()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Forms()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Jumbotron()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		[ActionName("list-group")]
 		[Route("list-group")]
 		public ActionResult ListGroup()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Navs()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Pagination()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Popovers()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Progress()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Scrollspy()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Switches()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Tables()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Tabs()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Tooltips()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 	}
 }

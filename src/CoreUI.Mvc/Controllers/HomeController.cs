@@ -11,19 +11,40 @@ namespace AdminApp.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
-        }
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
+		}
 
 		// GET: Home
 		public ActionResult About()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		// GET: Home
 		public ActionResult SiteMap()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 	}
 }

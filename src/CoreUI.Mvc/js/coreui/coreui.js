@@ -1340,10 +1340,12 @@
       NAV_ITEM: '.sidebar-nav .nav-item',
       VIEW_SCRIPT: '.view-script'
     };
-    var Default = {
-      defaultPage: 'main.html',
+	  var Default = {
+		  defaultPage: '',
+      //defaultPage: 'main.html',
       errorPage: '404.html',
-      subpagesDirectory: 'views/'
+      //subpagesDirectory: 'views/'
+	  subpagesDirectory: ''
     };
 
     var AjaxLoad =

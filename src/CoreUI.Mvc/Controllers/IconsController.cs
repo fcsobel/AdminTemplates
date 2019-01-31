@@ -10,33 +10,68 @@ namespace AdminApp.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
+		}
 
 		[ActionName("coreui-icons")]
 		[Route("coreui-icons")]
 		public ActionResult CoreuiIcons()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		public ActionResult Flags()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		[ActionName("font-awesome")]
 		[Route("font-awesome")]
 		public ActionResult FontAwesome()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}
 
 		[ActionName("simple-line-icons")]
 		[Route("simple-line-icons")]
 		public ActionResult SimpleLineIcons()
 		{
-			return View();
+			if (Request.IsAjaxRequest())
+			{
+				return PartialView();
+			}
+			else
+			{
+				return View();
+			}
 		}		
 	}
 }
