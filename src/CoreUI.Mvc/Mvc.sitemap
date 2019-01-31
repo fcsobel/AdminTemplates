@@ -5,7 +5,7 @@
 
 	<mvcSiteMapNode title="Admin" controller="Home" action="Index" icon="puzzle">
 
-		<mvcSiteMapNode title="Dashboard" controller="Admin" action="Index" icon="speedometer" />
+		<mvcSiteMapNode title="Dashboard" controller="Admin" action="Index" icon="speedometer" badge="NEW" badge-type="info" />
 		
 		<mvcSiteMapNode group="Theme" title="Colors" controller="Admin" action="Colors" icon="drop"  />
 		<mvcSiteMapNode title="Typography" controller="Admin" action="Typography" icon="pencil" />
@@ -39,7 +39,7 @@
 			<mvcSiteMapNode controller="Buttons" title="Dropdowns"			action="dropdowns"	 />
 		</mvcSiteMapNode>
 
-		<mvcSiteMapNode  title="Charts" controller="Admin" action="Charts" icon="chart" badge="PRO" badge-type="danger" />
+		<mvcSiteMapNode  title="Charts" controller="Admin" action="Charts" icon="pie-chart" badge="PRO" badge-type="danger" />
 
 		<mvcSiteMapNode controller="Icons" title="Icons" action="Index" icon="star">
 			<mvcSiteMapNode controller="Icons" title="CoreUI Icons" action="coreui-icons" />

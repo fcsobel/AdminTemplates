@@ -19,7 +19,7 @@
 {
 	<li class="nav-item nav-dropdown">	
 		<a class="nav-link nav-dropdown-toggle" href="#" title="@Model.Description">
-		<i class="nav-icon icon-@icon"></i>@Model.Title
+		<i class="nav-icon icon-@icon"></i> @Model.Title
 		@if (!string.IsNullOrWhiteSpace(badge))
 		{
 			<span class="badge badge-@badgeType">@badge</span>
@@ -32,7 +32,7 @@ else
 {
 	<li class="nav-item">
 		<a class="nav-link @state" href="@Model.Url" title="@Model.Description">
-		<i class="nav-icon icon-@icon"></i>@Model.Title
+		<i class="nav-icon icon-@icon"></i> @Model.Title
 		@if (!string.IsNullOrWhiteSpace(badge))
 		{
 			<span class="badge badge-@badgeType">@badge</span>
