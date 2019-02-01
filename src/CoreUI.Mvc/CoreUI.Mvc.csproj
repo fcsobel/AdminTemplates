@@ -134,7 +134,6 @@
     <Content Include="img\favicon.png" />
     <Content Include="img\logo-symbol.png" />
     <Content Include="img\logo.png" />
-    <Content Include="index.html" />
     <Content Include="js\app.js" />
     <Content Include="js\charts.js" />
     <Content Include="js\colors.js" />
