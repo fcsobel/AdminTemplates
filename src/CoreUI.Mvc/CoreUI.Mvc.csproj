@@ -188,13 +188,7 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\_AppHeader.cshtml" />
-    <Content Include="Views\Shared\_SidebarNav.cshtml" />
-    <Content Include="Views\Shared\_AsideMenu.cshtml" />
-    <Content Include="Views\Shared\_BreadCrumb.cshtml" />
-    <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\SiteMapTitleHelperModel.cshtml" />
@@ -246,6 +240,16 @@
     <Content Include="Views\Buttons\buttons.cshtml" />
     <Content Include="Views\Buttons\dropdowns.cshtml" />
     <Content Include="Views\Admin\main.cshtml" />
+    <Content Include="Views\Shared\Layouts\CoreUI\_AppHeader.cshtml" />
+    <Content Include="Views\Shared\Layouts\CoreUI\_AsideMenu.cshtml" />
+    <Content Include="Views\Shared\Layouts\CoreUI\_BreadCrumb.cshtml" />
+    <Content Include="Views\Shared\Layouts\CoreUI\_Footer.cshtml" />
+    <Content Include="Views\Shared\Layouts\CoreUI\_Layout.cshtml" />
+    <Content Include="Views\Shared\Layouts\CoreUI\_SidebarNav.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\CoreUISiteMapHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\CoreUISiteMapPathHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\CoreUISiteMapNodeModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\CoreUISiteMapNodeModelList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

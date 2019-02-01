@@ -24,17 +24,17 @@
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
-	@Html.Partial("_AppHeader")
+	@Html.Partial("Layouts/CoreUI/_AppHeader")
 	<div class="app-body">
 		<div class="sidebar">
 			<nav class="sidebar-nav">
-				@Html.MvcSiteMap().SiteMap()
+				@Html.MvcSiteMap().SiteMap("CoreUISiteMapHelperModel")
 			</nav>
 			<button class="sidebar-minimizer brand-minimizer" type="button"></button>
 		</div>
 
 		<main class="main">
-			@Html.MvcSiteMap().SiteMapPath()
+			@Html.MvcSiteMap().SiteMapPath("CoreUISiteMapPathHelperModel")
 			<div class="container-fluid">
 				
 			</div>
@@ -44,9 +44,9 @@
 				</div>
 			</div>
 		</main>
-		@Html.Partial("_AsideMenu")
+		@Html.Partial("Layouts/CoreUI/_AsideMenu")
 	</div>
-	@Html.Partial("_Footer")
+	@Html.Partial("Layouts/CoreUI/_Footer")
 
 	<!-- CoreUI, Bootstrap and necessary plugins-->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
