@@ -4,56 +4,28 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AdminApp.Controllers
+namespace CoreUI.Mvc.Controllers
 {
-    public class NotificationsController : Controller
-    {
-        public ActionResult Index()
-        {
-			if (Request.IsAjaxRequest())
-			{
-				return PartialView();
-			}
-			else
-			{
-				return View();
-			}
+	public class NotificationsController : Controller
+	{
+		public ActionResult Index()
+		{
+			return Request.IsAjaxRequest() ? (ActionResult)PartialView() : View();
 		}
 
 		public ActionResult Alerts()
 		{
-			if (Request.IsAjaxRequest())
-			{
-				return PartialView();
-			}
-			else
-			{
-				return View();
-			}
+			return Request.IsAjaxRequest() ? (ActionResult)PartialView() : View();
 		}
 
 		public ActionResult Badge()
 		{
-			if (Request.IsAjaxRequest())
-			{
-				return PartialView();
-			}
-			else
-			{
-				return View();
-			}
+			return Request.IsAjaxRequest() ? (ActionResult)PartialView() : View();
 		}
 
 		public ActionResult Modals()
 		{
-			if (Request.IsAjaxRequest())
-			{
-				return PartialView();
-			}
-			else
-			{
-				return View();
-			}
+			return Request.IsAjaxRequest() ? (ActionResult)PartialView() : View();
 		}
 	}
 }

@@ -138,24 +138,13 @@
     <Content Include="js\app.js" />
     <Content Include="js\charts.js" />
     <Content Include="js\colors.js" />
-    <Content Include="js\coreui-ajax\coreui-utilities.js" />
-    <Content Include="js\coreui-ajax\coreui-utilities.min.js" />
-    <Content Include="js\coreui-ajax\coreui.js" />
-    <Content Include="js\coreui-ajax\coreui.min.js" />
+    <Content Include="js\coreui\coreui-utilities.js" />
+    <Content Include="js\coreui\coreui-utilities.min.js" />
     <Content Include="js\coreui\coreui.js" />
     <Content Include="js\coreui\custom-tooltips.js" />
     <Content Include="js\coreui\custom-tooltips.min.js" />
-    <Content Include="js\coreui\main.js" />
     <Content Include="js\main.js" />
     <Content Include="js\popovers.js" />
-    <Content Include="js\site.js" />
-    <Content Include="js\site.min.js" />
-    <Content Include="js\src\charts.js" />
-    <Content Include="js\src\colors.js" />
-    <Content Include="js\src\main.js" />
-    <Content Include="js\src\popovers.js" />
-    <Content Include="js\src\tooltips.js" />
-    <Content Include="js\src\widgets.js" />
     <Content Include="js\tooltips.js" />
     <Content Include="js\widgets.js" />
     <Content Include="Web.config">
@@ -187,14 +176,11 @@
     <Content Include="js\tooltips.js.map" />
     <Content Include="js\widgets.js.map" />
     <Content Include="js\coreui\custom-tooltips.js.map" />
-    <Content Include="js\coreui\main.js.map" />
     <Content Include="js\coreui\custom-tooltips.min.js.map" />
     <Content Include="css\coreui\pace.css.map" />
     <Content Include="css\coreui\pace.min.css.map" />
-    <Content Include="js\coreui-ajax\coreui-utilities.js.map" />
-    <Content Include="js\coreui-ajax\coreui-utilities.min.js.map" />
-    <Content Include="js\coreui-ajax\coreui.js.map" />
-    <Content Include="js\coreui-ajax\coreui.min.js.map" />
+    <Content Include="js\coreui\coreui-utilities.js.map" />
+    <Content Include="js\coreui\coreui-utilities.min.js.map" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -221,8 +207,6 @@
     <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
     <Content Include="Views\Home\SiteMap.cshtml" />
     <Content Include="Views\Home\Dashboard.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\Bootstrap4\BootstrapMenuHelperModel.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\Bootstrap4\BootstrapSiteMapPathHelperModel.cshtml" />
     <Content Include="Views\Admin\Colors.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\Charts.cshtml" />
@@ -270,8 +254,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="css\coreui-ajax\" />
+    <Folder Include="vendors\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

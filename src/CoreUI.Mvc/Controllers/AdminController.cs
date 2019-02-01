@@ -4,81 +4,38 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AdminApp.Controllers
+namespace CoreUI.Mvc.Controllers
 {
     public class AdminController : Controller
-    {
-        // GET: Home
+	{
         public ActionResult Index()
         {
-			if (Request.IsAjaxRequest())
-			{
-				return PartialView();
-			}
-			else
-			{
-				return View();
-			}
+			return Request.IsAjaxRequest() ? (ActionResult)PartialView() : View();
 		}
 
 		public ActionResult Dashboard()
 		{
-			if (Request.IsAjaxRequest())
-			{
-				return PartialView();
-			}
-			else
-			{
-				return View();
-			}
+			return Request.IsAjaxRequest() ? (ActionResult)PartialView() : View();
 		}
 
 		public ActionResult Colors()
 		{
-			if (Request.IsAjaxRequest())
-			{
-				return PartialView();
-			}
-			else
-			{
-				return View();
-			}
+			return Request.IsAjaxRequest() ? (ActionResult)PartialView() : View();
 		}
 
 		public ActionResult Charts()
 		{
-			if (Request.IsAjaxRequest())
-			{
-				return PartialView();
-			}
-			else
-			{
-				return View();
-			}
+			return Request.IsAjaxRequest() ? (ActionResult)PartialView() : View();
 		}
 
 		public ActionResult Typography()
 		{
-			if (Request.IsAjaxRequest())
-			{
-				return PartialView();
-			}
-			else
-			{
-				return View();
-			}
+			return Request.IsAjaxRequest() ? (ActionResult)PartialView() : View();
 		}
 
 		public ActionResult Widgets()
 		{
-			if (Request.IsAjaxRequest())
-			{
-				return PartialView();
-			}
-			else
-			{
-				return View();
-			}
+			return Request.IsAjaxRequest() ? (ActionResult)PartialView() : View();
 		}
 	}
 }

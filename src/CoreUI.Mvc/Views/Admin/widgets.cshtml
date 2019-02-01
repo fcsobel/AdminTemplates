@@ -1,10 +1,4 @@
-﻿<script src="~/js/widgets.js"></script>
-
-@*<script src="node_modules/chart.js/dist/Chart.min.js"></script>
-<script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
-<script src="js/widgets.js"></script>*@
-
-<div class="animated fadeIn">
+﻿<div class="animated fadeIn">
   <div class="row">
     <div class="col-sm-6 col-lg-3">
       <div class="card text-white bg-primary">
@@ -833,6 +827,16 @@
   <!-- /.row-->
 </div>
 
-@section Scripts {
+@if (Request.IsAjaxRequest())
+{	
+	<!-- Plugins and scripts required by this view-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<script src="~/js/coreui/custom-tooltips.js"></script>
 	<script src="~/js/widgets.js"></script>
 }
+else { @section Scripts {
+	<!-- Plugins and scripts required by this view-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<script src="~/js/coreui/custom-tooltips.js"></script>
+	<script src="~/js/widgets.js"></script>
+} }

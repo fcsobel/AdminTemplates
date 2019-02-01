@@ -98,10 +98,17 @@
 	</div>
 </div>
 
-@section Scripts 
+@if (Request.IsAjaxRequest())
 {
 	<!-- Plugins and scripts required by this view-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 	<script src="~/js/coreui/custom-tooltips.js"></script>
 	<script src="~/js/charts.js"></script>
 }
+else { @section Scripts {
+	<!-- Plugins and scripts required by this view-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<script src="~/js/coreui/custom-tooltips.js"></script>
+	<script src="~/js/charts.js"></script>
+} }
+

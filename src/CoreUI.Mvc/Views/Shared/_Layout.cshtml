@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
-    <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
     <link rel="shortcut icon" href="~/img/favicon.png">
     <title>CoreUI - Bootstrap 4 Admin Template</title>
@@ -13,21 +12,12 @@
     <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.0.0/css/flag-icon.min.css" rel="stylesheet" />	
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	@*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">*@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" />
+
 	<!-- Main styles for this application-->
+@*	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">*@
 	<link href="~/css/coreui/style.css" rel="stylesheet" />
 	<link href="~/css/coreui/pace.min.css" rel="stylesheet" />
-    
-	@*<!-- Main styles for this application -->
-    <environment include="Development">
-        <link rel="stylesheet" href="/css/style.css">
-        <!-- Icons -->
-    </environment>
-
-    <environment exclude="Development">
-        <link rel="stylesheet" href="/css/style.min.css" asp-append-version="true" />
-    </environment>*@
 
     <!-- Styles required by this view -->
     @RenderSection("Styles", required: false)
@@ -64,18 +54,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.js"></script>
-	@*<script src="~/js/coreui/coreui.js"></script>*@
-	<script src="~/js/coreui-ajax/coreui.js"></script>
-	@*
-	<!-- Used by index page -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script src="/js/coreui/custom-tooltips.min.js"></script>
-    <script src="/js/coreui/main.js"></script>
-		*@
-	<!-- CoreUI main scripts -->
-	@*<script src="/js/app.js"></script>*@
 	
-	<!-- Plugins and scripts required by this views -->
+	<!-- CoreUI main scripts -->
+	<script src="~/js/coreui/coreui.js"></script>
 	<!-- Custom scripts required by this view -->
 	@RenderSection("Scripts", required: false)
 
@@ -85,6 +66,5 @@
         Pace.restart()
       });
     </script>
-
 </body>
 </html>
