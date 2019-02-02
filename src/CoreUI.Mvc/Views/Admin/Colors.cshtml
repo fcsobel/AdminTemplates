@@ -138,7 +138,12 @@
 	</div>
 </div>
 
-@section Scripts {
+@if (Request.IsAjaxRequest())
+{
 	<!-- Plugins and scripts required by this view-->
 	<script src="~/js/colors.js"></script>
 }
+else { @section Scripts {
+	<!-- Plugins and scripts required by this view-->
+	<script src="~/js/colors.js"></script>
+} }

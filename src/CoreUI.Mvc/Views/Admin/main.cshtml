@@ -718,18 +718,16 @@
 
 @if (Request.IsAjaxRequest())
 {
-	<!-- Plugins and scripts required by this view-->
-	<script src="/js/main.js"></script>
-}
-else{@section Scripts {
-	<!-- Plugins and scripts required by this view-->
-	<script src="/js/main.js"></script>
-	@*	
 	<!-- Used by index page -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-	<script src="/js/coreui/custom-tooltips.min.js"></script>
-	<script src="/js/coreui/main.js"></script>
-	<!-- CoreUI main scripts -->
-	<script src="/js/app.js"></script>
-	*@
-}}
+	<script src="~/vendor/coreui/js/custom-tooltips.min.js"></script>
+	<script src="/js/main.js"></script>
+}
+else
+{ @section Scripts {
+	<!-- Used by index page -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<script src="~/vendor/coreui/js/custom-tooltips.min.js"></script>
+	<script src="/js/main.js"></script>
+	@*<script src="/js/app.js"></script>*@
+} }

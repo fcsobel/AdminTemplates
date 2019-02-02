@@ -1,0 +1,50 @@
+[
+  {
+    "outputFileName": "vendor/coreui/js/coreui.min.js",
+    "inputFiles": [
+      "vendor/coreui/js/coreui.js"
+    ]
+  },
+  {
+    "outputFileName": "vendor/coreui/css/style.min.css",
+    "inputFiles": [
+      "vendor/coreui/css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "js/charts.min.js",
+    "inputFiles": [
+      "js/charts.js"
+    ]
+  },
+  {
+    "outputFileName": "js/colors.min.js",
+    "inputFiles": [
+      "js/colors.js"
+    ]
+  },
+  {
+    "outputFileName": "js/main.min.js",
+    "inputFiles": [
+      "js/main.js"
+    ]
+  },
+  {
+    "outputFileName": "js/popovers.min.js",
+    "inputFiles": [
+      "js/popovers.js"
+    ]
+  },
+  {
+    "outputFileName": "js/tooltips.min.js",
+    "inputFiles": [
+      "js/tooltips.js"
+    ]
+  },
+  {
+    "outputFileName": "js/widgets.min.js",
+    "inputFiles": [
+      "js/widgets.js"
+    ]
+  }
+]
