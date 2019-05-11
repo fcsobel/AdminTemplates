@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
+    <link rel="shortcut icon" href="~/content/images/favicon.png">
+    <title>CoreUI - Bootstrap 4 Admin Template</title>
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.0.0/css/flag-icon.min.css" rel="stylesheet" />	
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet" />
+
+	<!-- Main styles for this application-->
+@*	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">*@
+	<link href="~/vendor/coreui/css/style.css" rel="stylesheet" />
+	<link href="~/vendor/coreui/css/pace.min.css" rel="stylesheet" />
+
+    <!-- Styles required by this view -->
+    @RenderSection("Styles", required: false)
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+	@Html.Partial("Layouts/CoreUI/_AppHeader")
+	<div class="app-body">
+		<div class="sidebar">
+			<nav class="sidebar-nav">
+				@Html.MvcSiteMap().SiteMap("CoreUISiteMapHelperModel")
+			</nav>
+			<button class="sidebar-minimizer brand-minimizer" type="button"></button>
+		</div>
+
+		<main class="main">
+			@Html.MvcSiteMap().SiteMapPath("CoreUISiteMapPathHelperModel")
+			<div class="container-fluid">
+				
+			</div>
+			<div class="container-fluid">
+				<div id="ui-view">
+					@RenderBody()
+				</div>
+			</div>
+		</main>
+		@Html.Partial("Layouts/CoreUI/_AsideMenu")
+	</div>
+	@Html.Partial("Layouts/CoreUI/_Footer")
+
+	<!-- CoreUI, Bootstrap and necessary plugins-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.js"></script>
+	
+	<!-- CoreUI main scripts -->
+	<script src="~/vendor/coreui/js/coreui.js"></script>
+	<!-- Custom scripts required by this view -->
+	@RenderSection("Scripts", required: false)
+
+    <script>
+      //$('#ui-view').ajaxLoad();
+      $(document).ajaxComplete(function() {
+        Pace.restart()
+      });
+    </script>
+</body>
+</html>

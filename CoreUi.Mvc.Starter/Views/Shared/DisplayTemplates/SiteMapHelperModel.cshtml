@@ -1,0 +1,20 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapHelperModel
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+<ul class="nav">
+	@foreach (var node in Model.Nodes)
+	{
+		if (node.IsRootNode)
+		{
+			foreach (var child in node.Children)
+			{
+				@Html.DisplayFor(m => child)
+			}
+		}
+		else
+		{
+			@Html.DisplayFor(m => node)
+		}
+	}
+</ul>

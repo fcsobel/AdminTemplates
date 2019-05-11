@@ -1,0 +1,13 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapNodeModelList
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+@{
+	var parent = Model.First().Parent;
+}
+
+<ul class="nav-dropdown-items">
+	@foreach (var node in Model)
+	{
+		@Html.DisplayFor(m => node)
+	}
+</ul>

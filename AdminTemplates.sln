@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreUI.Mvc", "src\CoreUI.Mvc\CoreUI.Mvc.csproj", "{D5598922-8C0B-4470-A9F0-FFDC7490E77C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreUi.Mvc.Starter", "CoreUi.Mvc.Starter\CoreUi.Mvc.Starter.csproj", "{2A4A54E8-4E8D-43C6-950F-B62C8B90368F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D5598922-8C0B-4470-A9F0-FFDC7490E77C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5598922-8C0B-4470-A9F0-FFDC7490E77C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5598922-8C0B-4470-A9F0-FFDC7490E77C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A4A54E8-4E8D-43C6-950F-B62C8B90368F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A4A54E8-4E8D-43C6-950F-B62C8B90368F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A4A54E8-4E8D-43C6-950F-B62C8B90368F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A4A54E8-4E8D-43C6-950F-B62C8B90368F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
