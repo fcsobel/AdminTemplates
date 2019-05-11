@@ -46,5 +46,11 @@
     "inputFiles": [
       "js/widgets.js"
     ]
+  },
+  {
+    "outputFileName": "css/style.min.css",
+    "inputFiles": [
+      "css/style.css"
+    ]
   }
 ]

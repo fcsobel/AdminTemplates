@@ -111,6 +111,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\avatars\1.jpg" />
+    <Content Include="Content\images\avatars\2.jpg" />
+    <Content Include="Content\images\avatars\3.jpg" />
+    <Content Include="Content\images\avatars\4.jpg" />
+    <Content Include="Content\images\avatars\5.jpg" />
+    <Content Include="Content\images\avatars\6.jpg" />
+    <Content Include="Content\images\avatars\7.jpg" />
+    <Content Include="Content\images\avatars\8.jpg" />
+    <Content Include="Content\images\banner1.svg" />
+    <Content Include="Content\images\banner2.svg" />
+    <Content Include="Content\images\banner3.svg" />
+    <Content Include="Content\images\banner4.svg" />
+    <Content Include="Content\images\brand\logo.svg" />
+    <Content Include="Content\images\brand\sygnet.svg" />
+    <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\logo-symbol.png" />
+    <Content Include="Content\images\logo.png" />
     <Content Include="css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
@@ -163,23 +180,6 @@
     <Content Include="vendor\coreui\css\style.css" />
     <Content Include="css\style.css" />
     <Content Include="Global.asax" />
-    <Content Include="img\avatars\1.jpg" />
-    <Content Include="img\avatars\2.jpg" />
-    <Content Include="img\avatars\3.jpg" />
-    <Content Include="img\avatars\4.jpg" />
-    <Content Include="img\avatars\5.jpg" />
-    <Content Include="img\avatars\6.jpg" />
-    <Content Include="img\avatars\7.jpg" />
-    <Content Include="img\avatars\8.jpg" />
-    <Content Include="img\banner1.svg" />
-    <Content Include="img\banner2.svg" />
-    <Content Include="img\banner3.svg" />
-    <Content Include="img\banner4.svg" />
-    <Content Include="img\brand\logo.svg" />
-    <Content Include="img\brand\sygnet.svg" />
-    <Content Include="img\favicon.png" />
-    <Content Include="img\logo-symbol.png" />
-    <Content Include="img\logo.png" />
     <Content Include="vendor\coreui\js\app.js" />
     <Content Include="js\charts.js" />
     <Content Include="js\colors.js" />
