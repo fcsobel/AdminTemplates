@@ -1,4 +1,4 @@
-﻿# Markdown file
+﻿
 
 - CoreUi.Mvc.Starter 
   - Log
@@ -27,7 +27,6 @@
             + `/_BreadCrumb.cshtml`
             + `/_Footer.cshtml`
             + `/_Layout.cshtml`
-            + `/_SidebarNav.cshtml`
-        + 
+            + `/_SidebarNav.cshtml`        
     + Add Models:
       + `SiteMapNodeModelExtensions.cs`
