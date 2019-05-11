@@ -1,0 +1,21 @@
+﻿<!-- Breadcrumb-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">Home</li>
+    <li class="breadcrumb-item">
+    <a href="#">Admin</a>
+    </li>
+    <li class="breadcrumb-item active">Dashboard</li>
+    <!-- Breadcrumb Menu-->
+    <li class="breadcrumb-menu d-md-down-none">
+    <div class="btn-group" role="group" aria-label="Button group">
+        <a class="btn" href="#"><i class="icon-speech"></i></a>
+        <a class="btn" href="./"><i class="icon-graph"></i>  Dashboard</a>
+        <a class="btn" href="#"><i class="icon-settings"></i>  Settings</a>
+
+        <a class="btn" asp-controller="Home" asp-action="Index" asp-route-view=""><i class="fa fa-windows"></i> Home</a>
+        <a class="btn" asp-controller="Home" asp-action="About" asp-route-view=""><i class="icon-speech"></i> About</a>
+        <a class="btn" asp-controller="Home" asp-action="Contact" asp-route-view=""><i class="icon-envelope"></i> Contact</a>
+
+    </div>
+    </li>
+</ol>

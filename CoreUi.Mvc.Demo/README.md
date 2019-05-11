@@ -7,6 +7,7 @@
         + Options: `Empty with Mvc & Web.Api`       
     + Change NameSpace: `CoreUi.Mvc`
     + Add Package: `MvcSiteMapProvider.MVC5`
+      + Delete: `*.ascx` files under `/views/shared/DisplayTemplates`
     + Add controllers:
       + `HomeController`
     + Add Views:

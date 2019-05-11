@@ -8,7 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 
-namespace CoreUi.Mvc.Demo
+namespace CoreUi.Mvc
 {
     public class Global : HttpApplication
     {

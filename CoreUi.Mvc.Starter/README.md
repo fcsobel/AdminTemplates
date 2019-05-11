@@ -2,9 +2,10 @@
 
 - CoreUi.Mvc.Starter 
   - Log
-    + Add New Project: `ASP.Net Web Application (.NET Framework)`
-      + Option: `MVC`
-      + Option: `Web API`
+    + Add New Project: 
+      + `ASP.Net Web Application (.NET Framework)` 
+        + `CoreUi.Mvc.Starter`
+        + Options: `Empty with Mvc & Web.Api`                
     + Change NapeSpace: `CoreUi.Mvc`
     + Add Package: `MvcSiteMapProvider.MVC5`
     + Add controllers:

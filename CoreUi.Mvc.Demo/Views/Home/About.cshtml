@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Name"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+		 @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+    </div>
+
+	<div class="col-md-12">
+		 @Html.MvcSiteMap().Menu("BootstrapMenuHelperModel")
+    </div>
+
+</div>
