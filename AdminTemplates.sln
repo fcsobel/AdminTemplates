@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreUI.Mvc", "src\CoreUI.Mv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreUi.Mvc.Starter", "CoreUi.Mvc.Starter\CoreUi.Mvc.Starter.csproj", "{2A4A54E8-4E8D-43C6-950F-B62C8B90368F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreUi.Mvc.Demo", "CoreUi.Mvc.Demo\CoreUi.Mvc.Demo.csproj", "{CBA3A9E9-4D24-4F2A-8A2C-10721DE46874}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2A4A54E8-4E8D-43C6-950F-B62C8B90368F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A4A54E8-4E8D-43C6-950F-B62C8B90368F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A4A54E8-4E8D-43C6-950F-B62C8B90368F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA3A9E9-4D24-4F2A-8A2C-10721DE46874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA3A9E9-4D24-4F2A-8A2C-10721DE46874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA3A9E9-4D24-4F2A-8A2C-10721DE46874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA3A9E9-4D24-4F2A-8A2C-10721DE46874}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
